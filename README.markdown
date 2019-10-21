@@ -6,17 +6,17 @@ The base postgres image from Docker with extensions for importing OpenStreetMap 
 
 Can be built from the Dockerfile:
 
-    # docker build -t openfirmware/postgres-osm github.com/openfirmware/docker-postgres-osm.git
+    # docker build -t gelinger777/postgres-osm github.com/openfirmware/docker-postgres-osm.git
 
 ## Running Postgres
 
 Build the image:
 
-    # docker build -t openfirmware/postgres-osm .
+    # docker build -t gelinger777/postgres-osm .
 
 Then launch the container:
 
-    # docker run -d --name postgres-osm openfirmware/postgres-osm
+    # docker run -d --name postgres-osm gelinger777/postgres-osm
 
 Then test with `postgresql-client`:
 
