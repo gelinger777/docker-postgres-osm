@@ -6,9 +6,7 @@ MAINTAINER James Badger <james@jamesbadger.ca>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PG_MAJOR 9.3
-RUN rm -f /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg
-RUN apt-get install wget
-RUN wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add -
+
 RUN apt-get update && apt-get install -y -q postgresql-${PG_MAJOR}-postgis-2.1 postgresql-contrib postgresql-server-dev-${PG_MAJOR}
 
 ENV OSM_USER osm
